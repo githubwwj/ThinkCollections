@@ -25,8 +25,9 @@ public class LearnHashMap {
 		System.out.println(Integer.toBinaryString(h));
 
 		h ^= (h >>> 20) ^ (h >>> 12);
-		h = h ^ (h >>> 7) ^ (h >>> 4);
+		h = h ^ (h >>> 7) ^ (h >>> 4); 
 
+		//71638
 		System.out.println(Integer.toBinaryString(h) + "--h=" + h);
 		int index = h & 15;
 		System.out.println("index=" + index);
